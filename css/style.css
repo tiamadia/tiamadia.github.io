@@ -1,0 +1,344 @@
+/* Dont forget to add skip to main content later on */
+
+/*First Page: Navigation Bar and its Links*/
+
+nav{
+    text-align: center;
+    margin: 0;
+    z-index: 2;
+}
+
+.navigation-barpage{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-gap: 0px;
+}
+
+a.navigation-element{
+    color: #000000;
+    text-decoration: none;
+    font-weight: none;
+}
+
+a.navigation-element:hover{
+    border-bottom: 5px solid #ffffff;
+}
+
+div.HomepageLink, div.HomepageLink1, div.BrazilLink1, div.BrazilLink, div.CanadaLink1,div.GermanyLink, div.AboutMeLink, div.AboutMeLink1, div.CanadaLink, div.YogyaLink{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.HomepageLink a.navigation-element{
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+div.AboutMeLink1 a.navigation-element, div.BrazilLink1 a.navigation-element, div.CanadaLink1 a.navigation-element{
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Title Part of Website*/
+
+.title-part{
+  overflow: hidden;
+  position: relative; 
+}
+
+.title-bg{
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+  height: auto;
+  z-index:-1;
+  size: 100%;
+}
+
+.title-content{
+    position: relative;
+}
+
+h1{
+    font-size: 75px;
+    text-align: center;
+}
+
+h2.h2_main, .gallery-title h2{
+    text-align: center;
+    margin: 0px;
+    background-color: #E3CAD9;
+    padding: 10px;
+}
+
+.gallery-title h2{
+    border: 5px black solid;
+    border-left: none;
+    border-right: none;
+    font-size: 30px;
+}
+
+
+h2.h2_2nd{
+    text-align: center;
+    margin: 0px;
+    background-color: #E8D0C4;
+    padding: 10px;
+}
+
+/* General Body */
+
+body {
+    margin: 0;
+    background-color: #F2E2DC;
+}
+
+.spoof{
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    border: 10px solid black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.spoof h3{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.spoof h4{
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* First Page: Shortcuts of Website */
+
+.gallery{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 20px;
+    background-color: #F2E2DC;
+    padding: 20px;
+}
+
+.gallery img{
+    border-radius: 20px;
+    max-width: 70%;
+    max-height: auto;
+    border: 5px solid;
+}
+
+.brazil_link, .canada_link, .germany_link, .indonesia_link{
+    font-size: 25px;
+    text-decoration: bold;
+    text-align: center;
+    padding-bottom: 37px;
+    padding-top: 0px;
+}
+
+.brazil_link{
+    grid-row: 2 span 2;
+}
+
+#image1{
+    grid-column: 1 span 1;
+}
+
+#image1sub{
+    grid-column: 2 span 1;
+}
+
+#image2{
+    grid-column 1 span 1;
+
+}
+
+a.main_link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold italic;
+}
+
+/*Second Page, Title Part of Website*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto;
+}
+
+.portrait{
+    background-color: rgba(234, 224, 204, .8);
+    border: 8px solid rgb(214, 193, 153);
+    padding: 5px;
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.portrait{
+    grid-column: 2 / span 2;
+  }
+  
+.personal-image{
+    max-height: 650px;
+    overflow: hidden;
+    grid-column: 1 / span 4;
+  }
+  
+.portrait, .personal-image{
+    grid-row: 1 / span 1;
+  }
+
+  h3{
+      font-size: 25px;
+  }
+
+  h4{
+      text-align: justify;
+      text-align-last: center;
+  }
+
+  h2.page3{
+      border: 5px white solid;
+  }
+  
+  h2.h2_3rd{
+    text-align: center;
+    margin: 0px;
+    background-color: #7EC8C8;
+    padding: 10px;
+  }
+
+  .brazil_container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    grid-template-rows: auto;
+}
+
+.anita_text{
+    background-color: #B8E0E0;
+    border: 8px solid #449C9C;
+    padding: 5px;
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.anita_text{
+    grid-column: 2 / span 2;
+}
+  
+.anita_image{
+    max-height: 650px;
+    grid-column: 1 / span 4;
+  }
+  
+.anita_text, .anita_image{
+    grid-row: 1 / span 1;
+  }
+
+.anita_text h3{
+    font-size: 45px;
+}
+
+.anita_content{
+    background-color: #D4ECEC;
+    position: relative;
+    padding: 30px;
+}
+
+.anita_content p{
+    text-align: justify;
+    text-align-last: left;
+    font-size: 20px;
+}
+
+div.subtitle-canada h2 {
+    text-align: center;
+    margin: 0px;
+    background-color: #92C8AA;
+    padding: 10px;
+}
+
+.my-delegation h2{
+    border: 4px solid black;
+    text-align: center;
+    margin: 0px;
+    background-color: #7EC8C8;
+    padding: 10px;
+}
+
+.canada_pic img{
+    max-width: 100%;
+}
+
+.canada_content h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.canada_content p{
+    text-align: justify; 
+    text-align-last: left;
+    font-size: 20px;
+}
+
+.canada_content{
+    padding: 30px;
+    position: relative;
+    background-color: #BBDDCA;
+    margin-top: -10px;
+
+}
+
+/*Footer Content*/
+
+.footer-container{
+    display: grid; 
+    grid-template-columns: 10fr 1fr 1fr 10fr;
+    grid-gap: 0px;
+    margin: -10px;
+    margin-bottom: -13px;
+}
+
+img.icons{
+      width: 25px;
+      height: auto;
+  }
+
+p.icons{
+      text-align: center;
+  }
+
+footer{
+      background-color: #111111;
+      color: #000000;
+  }
+
+p.footer{
+    color: #f4f3ef;
+    text-align: center;
+    margin: 0px;
+    padding-top: 3px;
+  }
