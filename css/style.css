@@ -1,16 +1,44 @@
 /* Dont forget to add skip to main content later on */
 
+/* General Things to Add */
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: #F2E2DC;
+}
+
 /*First Page: Navigation Bar and its Links*/
+
+.skip a{
+    background: rgb(204, 204, 255);
+    transition: top 1s ease-out;
+    z-index: 1;
+    color: black;
+    position: absolute; 
+    top: -60px;
+}
+
+.skip a:focus{
+    position: absolute;
+    top: 11px;
+    left: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
 
 nav{
     text-align: center;
     margin: 0;
     z-index: 2;
+    padding: 20p
 }
 
 .navigation-barpage{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 0px;
 }
 
@@ -18,6 +46,8 @@ a.navigation-element{
     color: #000000;
     text-decoration: none;
     font-weight: none;
+    font-size: 17px;
+    font-family: 'Oxygen', sans-serif;
 }
 
 a.navigation-element:hover{
@@ -35,6 +65,8 @@ div.HomepageLink a.navigation-element{
     border: 2px solid white;
     border-radius: 10px;
     font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Domine', sans-serif;
 }
 
 div.AboutMeLink1 a.navigation-element, div.BrazilLink1 a.navigation-element, div.CanadaLink1 a.navigation-element{
@@ -43,6 +75,8 @@ div.AboutMeLink1 a.navigation-element, div.BrazilLink1 a.navigation-element, div
     border: 2px solid white;
     border-radius: 10px;
     font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Domine', sans-serif;
 }
 
 /* Title Part of Website*/
@@ -58,9 +92,9 @@ div.AboutMeLink1 a.navigation-element, div.BrazilLink1 a.navigation-element, div
   left: 0;
   top: 0;
   max-width: 100%;
-  height: auto;
   z-index:-1;
   size: 100%;
+  object-fit: cover;
 }
 
 .title-content{
@@ -72,20 +106,24 @@ h1{
     text-align: center;
 }
 
-h2.h2_main, .gallery-title h2{
+h2.h2_main{
     text-align: center;
-    margin: 0px;
     background-color: #E3CAD9;
     padding: 10px;
+    margin: 0px;
 }
 
-.gallery-title h2{
+.section-title h2{
     border: 5px black solid;
     border-left: none;
     border-right: none;
     font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    background-color: #E3CAD9;
+    padding: 10px;
+    margin: 0px;
 }
-
 
 h2.h2_2nd{
     text-align: center;
@@ -94,16 +132,44 @@ h2.h2_2nd{
     padding: 10px;
 }
 
-/* General Body */
-
-body {
-    margin: 0;
-    background-color: #F2E2DC;
+#text{
+    text-align: center;
+    background-color: #DEF3FD;
+    padding: 20px;
+    margin-top: 180px;
+    margin-bottom: -5px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
 }
 
-.spoof{
+#image{
+    margin-bottom: -5px;
+}
+
+#container{
+    background-image: url("../imgs/homepage-nature.jpg");
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* General Body */
+
+.flip_card{
+    perspective: 1000px;
+}
+
+.flip_card:hover .flipcard_inner{
+    transform: rotateY(180deg)
+}
+
+.front_flip, .back_flip{
     align-items: center;
-    width: 50%;
+    width: 275px;
+    height: 415px;
     margin: auto;
     border: 10px solid black;
     margin-top: 30px;
@@ -111,17 +177,12 @@ body {
     background-color: #ffffff;
 }
 
-.spoof h3{
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+.back_flip h4{
+    text-align: justify;
+    padding: 70px 20px;
 }
 
-.spoof h4{
-    text-align: justify;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+
 
 /* First Page: Shortcuts of Website */
 
@@ -212,9 +273,12 @@ a.main_link{
       font-size: 25px;
   }
 
-  h4{
-      text-align: justify;
-      text-align-last: center;
+  .back_flip p{
+      text-align: left;
+      text-align-last: left;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 20px;
   }
 
   h2.page3{
@@ -272,6 +336,7 @@ a.main_link{
     text-align: justify;
     text-align-last: left;
     font-size: 20px;
+    margin: 0px;
 }
 
 div.subtitle-canada h2 {
@@ -291,6 +356,7 @@ div.subtitle-canada h2 {
 
 .canada_pic img{
     max-width: 100%;
+    margin-bottom: -10px;
 }
 
 .canada_content h3{
@@ -334,11 +400,80 @@ p.icons{
 footer{
       background-color: #111111;
       color: #000000;
+      margin-top: -17px;
   }
 
 p.footer{
     color: #f4f3ef;
     text-align: center;
     margin: 0px;
-    padding-top: 3px;
+    vertical-align: baseline;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 100%;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  #footer_1{
+      padding-top: 10px; 
+  }
+
+  #footer_2{
+      padding-bottom: 10px;
+  }
+
+
+  /* Contact Form */
+
+  label {
+    color: black;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    font-family: 'Oxygen', 'sans-serif';
+  }
+
+  input[type=text], textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  form{
+      padding: 30px;
+  }
+
+  button {
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-family: 'Oxygen', 'sans-serif';
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    color: white;
+    border: 2px solid #ffffff;
+    background-color: black;
+    font-family: 'Oxygen', 'sans-serif';
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+
+  .contact_title{
+    background-color: #E3CAD9;
+    border: 8px solid white;
+    padding: 5px;
+    text-align: center;
+    align-self: flex-start;
+    padding-left: 30px;
+    padding-right: 30px;
   }

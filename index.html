@@ -8,32 +8,61 @@
     <link rel="shortcut icon" type="image/png" href="imgs/cisv-logo-final.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine&display=swap">
-	<title> My CISV Journey </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap">
+
+    <title> Tiara on the Road </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ5FN74M5Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-XQ5FN74M5Z');
+    </script>
 </head>
+
 <body>
+    <div class = "skip">
+        <a href = "#content">Skip to Main Content</a>
+    </div>
+
     <header class = "top-part-of-website">
         <div class ="title-part">
             <img class = "title-bg" src = "imgs/village.jpg" alt = "Background of Kids Playing Outside with Colorful Tapestry"/>
-            <h1 class = "bigheader">My CISV Journey</h1>
+            <h1 class = "bigheader">Memories on the Road</h1>
             <nav>
                 <div id="nav-ish" class = "navigation-barpage">
                     <div class = "HomepageLink"><a href = "index.html" class = "navigation-element">Homepage</a></div>
                     <div class = "AboutMeLink"><a href = "aboutme.html" class = "navigation-element">About Me</a></div>
-                    <div class = "BrazilLink"><a href = "brazil.html" class = "navigation-element">Brazil</a></div>
-                    <div class = "CanadaLink"><a href = "canada.html" class = "navigation-element">Canada</a></div>
-                    <div class = "GermanyLink"><a href = "germany.html" class = "navigation-element">Germany</a></div> 
-                    <div class = "YogyaLink"><a href = "yogyakarta.html" class = "navigation-element">Yogyakarta</a></div>
+                    <div class = "BrazilLink"><a href = "brazil.html" class = "navigation-element">Memories</a></div>
+                    <div class = "CanadaLink"><a href = "canada.html" class = "navigation-element">Contact</a></div>
                 </div>
             </nav>
         </div>
     </header>
-    <main>
+
+
+    <main id='content'>
         <h2 class = "h2_main">the most wonderful summers of my life</h2>
-        <div class = "spoof">
-            <h3>WHAT</h3>
-            <h4>This website is the culmination of all my happiest memories as a high school student travelling alone. These trips gave me unforgettable memories, unreal experiences, and a very very unique perspective that I am very fortunate to have. This website details my favorite stories, characters and places I've been through. Basically, an online time capsule! </h4>
+        <div class = "flip_card">
+            <div class = flipcard_inner>
+                <div class = "front_flip">
+                    <img src="imgs/what.png" alt="What"/>
+                </div>
+                <div class = "back_flip">
+                    <p>This website is the culmination of all my happiest memories as a high school student travelling alone. These trips gave me unforgettable memories, unreal experiences, and a very very unique perspective that I am very fortunate to have. This website details my favorite stories, characters and places I've been through. Basically, an online time capsule! </p>
+                </div>
+            </div>
         </div>
-        <div class = "gallery-title">
+        <div class = "section-title">
+            <h2> MY HOME </h2>
+        </div>
+        <div id = "container">
+            <h3 id = "text"> Bali, Indonesia </h3>
+        </div>
+        <div class = "section-title">
             <h2> MY TRAVELS </h2>
         </div>
         <div class="gallery"> 
@@ -49,21 +78,12 @@
             <img id="image4" src="imgs/indonesia.jpg" alt="Yogyakarta" />
             <img id ="image4sub" src='imgs/yogya-dance.jpg' alt = "Yogyakarta Dance" />
             <div class = "indonesia_link"><a href = "yogyakarta.html" class = "main_link">Yogyakarta, Indonesia: <br> Squatting, Rice and Crying Babies</a></div>
+            <imd id = "image5" src = "imgs/homepage-nature.jpg" alt = "Castle"/>
         </div>
     </main>
     <footer>
-        <p class = "footer">Contact Me</p>
-            <div class = 'footer-container'>
-                <div class = "footer_filler1"></div>
-                <div class = "footer-pics1">
-                    <a href="https://www.instagram.com/tiaramadia/"><p class = "icons"><img class="icons" src="imgs/instagram.png" alt="Link to Author's Instagram Page"/></p></a>
-                </div>
-                <div class = "footer-pics2">
-                    <a href="https://www.linkedin.com/in/tiaramadia/"><p class = "icons"><img class="icons" src="imgs/linkedin.png" alt="Link to Author's Linkedin Page"/></p></a>
-                </div>
-                <div class = "footer_filler2"></div>
-            </div>
-        <p class = "footer"> Some of the images and the information from this website is not owned by the Author. All appropriate external images and information will be linked accordingly.</p>
+        <p id = footer_1 class = "footer"> Tiara Amadia - SI 339 Portfolio 2021 ©  </p>
+        <p id = footer_2 class = "footer">Copyright of Author & University of Michigan School of Information</p>
     </footer>
 </body>
 </html>

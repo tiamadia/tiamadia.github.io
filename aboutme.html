@@ -8,9 +8,23 @@
     <link rel="shortcut icon" type="image/png" href="imgs/cisv-logo-final.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine&display=swap">
-	<title> About </title>
+    <title> About </title>
+    
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ5FN74M5Z"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
+ 
+       gtag('config', 'G-XQ5FN74M5Z');
+     </script>
+ </head>
 </head>
 <body>
+    <div class = "skip">
+        <a href = "#content">Skip to Main Content</a>
+    </div>
     <header class = "top-part-of-website">
         <div class ="title-part">
             <img class = "title-bg" src = "imgs/michigan-game.jpg.crdownload" alt = "Game"/>
@@ -19,18 +33,16 @@
                 <div id="nav-ish" class = "navigation-barpage">
                     <div class = "HomepageLink1"><a href = "index.html" class = "navigation-element">Homepage</a></div>
                     <div class = "AboutMeLink1"><a href = "aboutme.html" class = "navigation-element">About Me</a></div>
-                    <div class = "BrazilLink"><a href = "brazil.html" class = "navigation-element">Brazil</a></div>
-                    <div class = "CanadaLink"><a href = "canada.html" class = "navigation-element">Canada</a></div>
-                    <div class = "GermanyLink"><a href = "germany.html" class = "navigation-element">Germany</a></div> 
-                    <div class = "YogyaLink"><a href = "yogyakarta.html" class = "navigation-element">Yogyakarta</a></div>
+                    <div class = "BrazilLink"><a href = "brazil.html" class = "navigation-element">Memories</a></div>
+                    <div class = "CanadaLink"><a href = "canada.html" class = "navigation-element">Contact</a></div>
                 </div>
             </nav>
         </div>
-    </header>
-    <div class ="subtitle-part">
-        <h2 class = "h2_2nd">me and my passions</h2>
-    </div>    
-    <main>
+    </header>   
+    <main id='content'>
+        <div class ="subtitle-part">
+            <h2 class = "h2_2nd">me and my passions</h2>
+        </div> 
     <div class = "container">
         <div class="personal-image">
             <img src="imgs/personal.png" alt="Me"/>
@@ -44,20 +56,11 @@
     <h2 class = "h2_2nd">my hobbies</h2>
 
 
-    </main>
+    </main id = 'content'>
     <footer>
-        <p class = "footer">Contact Me</p>
-            <div class = 'footer-container'>
-                <div class = "footer_filler1"></div>
-                <div class = "footer-pics1">
-                    <a href="https://www.instagram.com/tiaramadia/"><p class = "icons"><img class="icons" src="imgs/instagram.png" alt="Link to Author's Instagram Page"/></p></a>
-                </div>
-                <div class = "footer-pics2">
-                    <a href="https://www.linkedin.com/in/tiaramadia/"><p class = "icons"><img class="icons" src="imgs/linkedin.png" alt="Link to Author's Linkedin Page"/></p></a>
-                </div>
-                <div class = "footer_filler2"></div>
-            </div>
-        <p class = "footer"> Some of the images and the information from this website is not owned by the Author. All appropriate external images and information will be linked accordingly.</p>
+        <p id = footer_1 class = "footer"> Tiara Amadia - SI 339 Portfolio 2021 ©  </p>
+        <p id = footer_2 class = "footer">Copyright of Author & University of Michigan School of Information</p>
     </footer>
+</body>
 </body>
 </html>
