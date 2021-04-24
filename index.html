@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio&display=swap">
 
     <title> Tiara on the Road </title>
 
@@ -31,13 +32,13 @@
     <header class = "top-part-of-website">
         <div class ="title-part">
             <img class = "title-bg" src = "imgs/village.jpg" alt = "Background of Kids Playing Outside with Colorful Tapestry"/>
-            <h1 class = "bigheader">Memories on the Road</h1>
+            <h1>Memories on the Road</h1>
             <nav>
-                <div id="nav-ish" class = "navigation-barpage">
-                    <div class = "HomepageLink"><a href = "index.html" class = "navigation-element">Homepage</a></div>
-                    <div class = "AboutMeLink"><a href = "aboutme.html" class = "navigation-element">About Me</a></div>
-                    <div class = "BrazilLink"><a href = "brazil.html" class = "navigation-element">Memories</a></div>
-                    <div class = "CanadaLink"><a href = "canada.html" class = "navigation-element">Contact</a></div>
+                <div class = "nav_container">
+                    <div class = "current1"><a href = "index.html" class = "nav_bar">Homepage</a></div>
+                    <div class = "other"><a href = "aboutme.html" class = "nav_bar">About Me</a></div>
+                    <div class = "other"><a href = "brazil.html" class = "nav_bar">Memories</a></div>
+                    <div class = "other"><a href = "canada.html" class = "nav_bar">Contact</a></div>
                 </div>
             </nav>
         </div>
@@ -45,40 +46,73 @@
 
 
     <main id='content'>
-        <h2 class = "h2_main">the most wonderful summers of my life</h2>
+        <h2>the most wonderful summers of my life</h2>
+
         <div class = "flip_card">
             <div class = flipcard_inner>
                 <div class = "front_flip">
-                    <img src="imgs/what.png" alt="What"/>
+                    <img class = "flip_picture" src="imgs/what.png" alt="What"/>
                 </div>
                 <div class = "back_flip">
                     <p>This website is the culmination of all my happiest memories as a high school student travelling alone. These trips gave me unforgettable memories, unreal experiences, and a very very unique perspective that I am very fortunate to have. This website details my favorite stories, characters and places I've been through. Basically, an online time capsule! </p>
                 </div>
             </div>
         </div>
-        <div class = "section-title">
+
+        <div class = "section">
             <h2> MY HOME </h2>
         </div>
-        <div id = "container">
-            <h3 id = "text"> Bali, Indonesia </h3>
+
+        <div class = "my_home">
+            <img class = "myhome_img" src="imgs/homepage-nature.jpg" alt = "Bali"/>
         </div>
-        <div class = "section-title">
+
+        <div class = "myhome_text">
+            <h3 >Jakarta, Indonesia</h3> 
+            <p>I was born in Jakarta, Indonesia on December 2nd 2001. My whole entire life I have spent time in a metropolitan but I have instead always wanted to venture outwards into nature. This picture above represents what I love most about Indonesia. Our country is the perfect example of culture, beauty and elegance all rolled into one. Even though I have traveled much, I need to preface that I have always found Indonesia my home.</p>
+        </div>
+
+        <div class = "section">
             <h2> MY TRAVELS </h2>
         </div>
-        <div class="gallery"> 
-            <img id="image1" src="imgs/brazil.jpg" alt="Brazil" />
-            <img id="image1sub" src="imgs/brazil-games.jpg" alt="Brazil Games"/>
-            <div class = "brazil_link"><a href = "brazil.html" class = "main_link">Sao, Paulo Brazil: <br> Homesickness, Sunburns and International Drama</a></div>
-            <img id="image2" src="imgs/canada.jpg" alt="Canada" />
-            <img id = "image2sub" src="imgs/canada-snow.jpg" alt="Canada Snow" />
-            <div class = "canada_link"><a href = "canada.html" class = "main_link">Ottawa, Canada: <br> Mosquitos, Bunkbeds and Summer Love</a></div>
-            <img id="image3" src="imgs/germany.jpg" alt="Germany" />
-            <img id="image3sub" src = "imgs/germany-food.jpg" alt = "German Food" />
-            <div class = "germany_link"><a href = "germany.html" class = "main_link">Pfungstadt, Germany: <br> Homesickness, Long Nights and Just Dance 3</a></div>
-            <img id="image4" src="imgs/indonesia.jpg" alt="Yogyakarta" />
-            <img id ="image4sub" src='imgs/yogya-dance.jpg' alt = "Yogyakarta Dance" />
-            <div class = "indonesia_link"><a href = "yogyakarta.html" class = "main_link">Yogyakarta, Indonesia: <br> Squatting, Rice and Crying Babies</a></div>
-            <imd id = "image5" src = "imgs/homepage-nature.jpg" alt = "Castle"/>
+
+        <div class = "gallery">
+            <div class = "gallery_section">
+                <img id = "brazil" src="imgs/brazil.jpg" alt = "Brazil" />
+                <div class = "text">Brazil</div>
+            </div>
+            <div class = "gallery_section">
+                <img id="mexico" src="imgs/brazil-games.jpg" alt="Brazil Games"/>
+                <div class = "text">Mexico</div>
+            </div>
+            <div class = "gallery_section">
+                <img id="canada" src="imgs/canada.jpg" alt="Canada" />
+                <div class = "text">Canada</div>
+            </div>
+            <div class = "gallery_section">
+                <img id = "costa_rica" src="imgs/canada-snow.jpg" alt="Canada Snow" />
+                <div class = "text">Costa Rica</div>
+            </div>
+            <div class = "gallery_section">
+                <img id="germany" src="imgs/germany.jpg" alt="Germany" />
+                <div class = "text">Germany</div>
+            </div>
+            <div class = "gallery_section">
+                <img id="prague" src = "imgs/germany-food.jpg" alt = "German Food" />
+                <div class = "text">Prague</div>
+            </div>
+            <div class = "gallery_section">
+                <img id="yogya" src="imgs/indonesia.jpg" alt="Yogyakarta" />
+                <div class = "text">Yogyakarta</div>
+            </div>
+            <div class = "gallery_section">
+                <img id ="bali" src='imgs/yogya-dance.jpg' alt = "Yogyakarta Dance" />
+                <div class = "text">Bali</div>
+            </div>
+            <div class = "gallery_section">
+                <img id ="mich" src='imgs/michigan.png' alt = "Michigan Game" />
+                <div class = "text">Michigan</div>
+            </div>
         </div>
     </main>
     <footer>

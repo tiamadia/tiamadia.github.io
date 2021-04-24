@@ -10,9 +10,18 @@ body {
     background-color: #F2E2DC;
 }
 
+/* header part of website */
+
+h1{
+    font-size: 75px;
+    text-align: center;
+    padding: 29px;
+}
+
 /*First Page: Navigation Bar and its Links*/
 
 .skip a{
+    /* this property shows the skip to content page */
     background: rgb(204, 204, 255);
     transition: top 1s ease-out;
     z-index: 1;
@@ -22,6 +31,7 @@ body {
 }
 
 .skip a:focus{
+    /* shows the skip to content page when in focus, like when you hit tab*/
     position: absolute;
     top: 11px;
     left: 5px;
@@ -33,50 +43,60 @@ nav{
     text-align: center;
     margin: 0;
     z-index: 2;
-    padding: 20p
+    padding: 20px;
 }
 
-.navigation-barpage{
+.nav_container{
+    /* the container for the navigation page */
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 0px;
 }
 
-a.navigation-element{
+.nav_bar{
+    /* the seperate navigation elements */
     color: #000000;
     text-decoration: none;
     font-weight: none;
     font-size: 17px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen', sans-serif;    
 }
 
-a.navigation-element:hover{
+.nav_bar:hover{
+    /* when you hover navigation bar*/
     border-bottom: 5px solid #ffffff;
 }
 
-div.HomepageLink, div.HomepageLink1, div.BrazilLink1, div.BrazilLink, div.CanadaLink1,div.GermanyLink, div.AboutMeLink, div.AboutMeLink1, div.CanadaLink, div.YogyaLink{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-div.HomepageLink a.navigation-element{
+.current {
+    /* indicates current page in navigation link */
     background-color: #ffffff;
-    padding: 10px;
     border: 2px solid white;
     border-radius: 10px;
     font-weight: bold;
+    font-size: 20px;
     text-transform: uppercase;
-    font-family: 'Domine', sans-serif;
+    margin-bottom: 10px;
+    font-family: 'Antonio', sans-serif;
+    padding: 8px 0px;
 }
 
-div.AboutMeLink1 a.navigation-element, div.BrazilLink1 a.navigation-element, div.CanadaLink1 a.navigation-element{
+.current1{
     background-color: #ffffff;
-    padding: 10px;
     border: 2px solid white;
     border-radius: 10px;
     font-weight: bold;
+    font-size: 20px;
     text-transform: uppercase;
-    font-family: 'Domine', sans-serif;
+    margin-bottom: 10px;
+    font-family: 'Antonio', sans-serif;
+    padding-top: 6px;
+    padding-bottom: 8px;
+}
+
+
+
+.other{
+    padding-top: 12.5px;
 }
 
 /* Title Part of Website*/
@@ -101,92 +121,9 @@ div.AboutMeLink1 a.navigation-element, div.BrazilLink1 a.navigation-element, div
     position: relative;
 }
 
-h1{
-    font-size: 75px;
-    text-align: center;
-}
-
-h2.h2_main{
-    text-align: center;
-    background-color: #E3CAD9;
-    padding: 10px;
-    margin: 0px;
-}
-
-.section-title h2{
-    border: 5px black solid;
-    border-left: none;
-    border-right: none;
-    font-size: 30px;
-    margin: 0px;
-    text-align: center;
-    background-color: #E3CAD9;
-    padding: 10px;
-    margin: 0px;
-}
-
-h2.h2_2nd{
-    text-align: center;
-    margin: 0px;
-    background-color: #E8D0C4;
-    padding: 10px;
-}
-
-#text{
-    text-align: center;
-    background-color: #DEF3FD;
-    padding: 20px;
-    margin-top: 180px;
-    margin-bottom: -5px;
-    z-index: 100;
-    position: absolute;
-    width: 100%;
-}
-
-#image{
-    margin-bottom: -5px;
-}
-
-#container{
-    background-image: url("../imgs/homepage-nature.jpg");
-    min-height: 400px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-}
-
-/* General Body */
-
-.flip_card{
-    perspective: 1000px;
-}
-
-.flip_card:hover .flipcard_inner{
-    transform: rotateY(180deg)
-}
-
-.front_flip, .back_flip{
-    align-items: center;
-    width: 275px;
-    height: 415px;
-    margin: auto;
-    border: 10px solid black;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    background-color: #ffffff;
-}
-
-.back_flip h4{
-    text-align: justify;
-    padding: 70px 20px;
-}
 
 
-
-/* First Page: Shortcuts of Website */
-
-.gallery{
+.gallery1{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto auto;
@@ -197,11 +134,11 @@ h2.h2_2nd{
     padding: 20px;
 }
 
-.gallery img{
+.gallery1 img{
     border-radius: 20px;
     max-width: 70%;
     max-height: auto;
-    border: 5px solid;
+    border: 5px solid white;
 }
 
 .brazil_link, .canada_link, .germany_link, .indonesia_link{
@@ -209,7 +146,7 @@ h2.h2_2nd{
     text-decoration: bold;
     text-align: center;
     padding-bottom: 37px;
-    padding-top: 0px;
+    padding-top: 10px;
 }
 
 .brazil_link{
@@ -229,11 +166,252 @@ h2.h2_2nd{
 
 }
 
+/* General Body */
+
+h2 {
+    text-align: center;
+    background-color: #E3CAD9;
+    padding: 10px;
+    margin: 0px;
+    font-size: 25px;
+}
+
+    /* FlipCard */
+
+.flip_card{
+    /* indicates container of flip card */
+    background-color: transparent;
+    width: 275px;
+    height: 415px;
+    perspective: 1000px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.flipcard_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    margin: 30px 0px;
+    border: 10px solid black;
+}
+
+.flip_card:hover .flipcard_inner, .flip_card:focus-within .flipcard_inner, .flip_card:active .flipcard_inner, .flip_card:focus .flipcard_inner{
+    transform: rotateY(180deg);
+    transition: transform 1s;
+}
+
+.front_flip, .back_flip{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.front_flip{
+    background-color: #bbb;
+    color: black;
+}
+
+.back_flip{
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+/* what happens in reduced motion? remove the flipcard */
+
+@media (prefers-reduced-motion: reduce) {
+    
+    .flip_card .flipcard_inner, .flip_card:hover .flipcard_inner, .flip_card:focus-within .flipcard_inner, .flip_card:active .flipcard_inner, .flip_card:focus .flipcard_inner{
+      transform: rotateY(180deg);
+      transition: none;
+      -webkit-transition: none;  
+      pointer-events: none;
+      transform-style:none;
+      perspective: 0px;/* sets to default setting */
+    }
+
+    #container{
+    max-width: 0px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0px;
+    background-image: hidden;
+    }
+
+    #parallax{
+        background-attachment: scroll;
+    }
+
+    .parallax_stop{
+        background-attachment: scroll;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+
+.section {
+    border: 5px black solid;
+    border-left: none;
+    border-right: none;
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    background-color: #E3CAD9;
+    padding: 10px;
+}
+
+/* My Home section of First Page */
+
+.myhome_img {
+    width: 100%;
+}   
+
+.myhome_text{
+    text-align: justify;
+    background-color: #DEF3FD;
+    margin-top: -5px;
+    padding: 20px 15px;
+}
+
+.myhome_text h3{
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 5px solid gray;
+    padding-bottom: 4px;
+}
+
+/* My Travels section of the Section Page */
+
+.gallery{
+    margin: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+}
+
+.gallery_section{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.text{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    padding: 20px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border: 10px solid gray;
+}
+
+.gallery_section h4{
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 20px;
+    position: relative;
+}
+
+.gallery img{
+    border: 10px solid white;
+    width: 400px;
+    height: 250px;
+    align-items: center;
+}
+
+#passions{
+    background-color: #E8D0C4;
+}
+
+#passions1{
+    background-color: #E8D0C4;
+}
+
+
+h2.h2_2nd{
+    text-align: center;
+    margin: 0px;
+    background-color: #E8D0C4;
+    padding: 10px;
+}
+
+#text{
+    text-align: center;
+    background-color: #DEF3FD;
+    padding: 20px;
+    margin-top: 250px;
+    margin-bottom: -5px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+}
+
+#image{
+    margin-bottom: -5px;
+}
+
+#container{
+    background-image: url("../imgs/homepage-nature.jpg");
+    min-height: 400px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.portrait h3{
+    padding: 10px 0px;
+}
+
+.portrait h4{
+    text-align: justify;
+    text-align-last: center;
+    padding-bottom: 10px;
+}
+
+/* First Page: Shortcuts of Website */
+
+#container{
+    background-image: url("../imgs/village.jpg");
+    min-height: 100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+#text{
+    text-align: center;
+    background-color: #DEF3FD;
+    padding: 20px;
+    margin-top: 180px;
+    margin-bottom: -5px;
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+}
+
 a.main_link{
     color: black;
     text-decoration: none;
     font-weight: bold italic;
 }
+
+
+
 
 /*Second Page, Title Part of Website*/
 
@@ -279,6 +457,15 @@ a.main_link{
       padding: 15px;
       font-weight: bold;
       font-size: 20px;
+  }
+
+  #parallax{
+    background-image: url(../imgs/village.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   h2.page3{
@@ -327,7 +514,7 @@ a.main_link{
 }
 
 .anita_content{
-    background-color: #D4ECEC;
+    background-color: #B8E0E0;
     position: relative;
     padding: 30px;
 }
